@@ -1,0 +1,209 @@
+body{
+    margin:0;
+    font-family: Arial,sans-serif;
+    background-color:#f7f5ef;
+    color:#262626;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    background-color: #173d2a;
+    padding:20px 10px;
+}
+.logo{
+    color:white;
+    font-size:25px;
+    font-weight:bold;
+}
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    nav a:hover{
+        color:red
+    }
+}
+.hero{
+    min-height: 480px;
+    background-image:url("https://plus.unsplash.com/premium_photo-1670148434846-eab89d9dbdc0?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:center;
+    padding: 6opx 20px;
+    color: white;
+}
+.hero h1{
+    font-size: 50px;
+}
+.hero p{
+        font-size: 20px;
+        line-height: 1.6;
+    }
+.hero button{
+    background-color: #f5b544;
+    color: black;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+    width: 100%;
+    padding: 60px 30px;
+     box-sizing: border-box;
+
+    background-image: url("https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.columns{
+    flex: 1;
+    min-width: 0;
+     background-color: #FFFFFF;
+    border-radius: 15px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+     box-sizing: border-box;
+}
+.column:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(15, 23, 42, 0.15);
+}
+.columns h2 {
+    color: #0F766E;
+    font-size: 26px;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 15px;
+
+}
+.columns p {
+    color: #475569;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 0;
+}
+/* contact styles */
+.hero-contact{
+    background-color: #173d2a;
+    color: white;
+    text-align: center;
+    padding: 45px 20px ;
+}
+.hero-contact h1{
+    font-size:36px;
+}
+.hero-contact{
+    font-size: 16px;
+}
+
+/* Control the paragraph width */
+.hero-contact p {
+    max-width: 500px;
+    margin: 15px auto 0;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container{
+display: flex;
+gap: 40px;
+padding: 50px;
+align-items: stretch;
+box-sizing: border-box;
+}
+.left{
+    background-color:hsl(187, 54%, 47%) ;
+    padding: 25px; ;
+    flex:1;
+    min-width: 0;
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+/* image on the left */
+.left img{
+    display:block;
+    width:100%; 
+    height: 500px; 
+    object-fit: cover;
+    border-radius: 10px;
+  
+}
+/* Arrangment each label above its field  */
+ label{
+    display:block;
+    width:100%;
+    margin:0 0 8px;
+    margin-bottom: 8px;
+    color: #333333;
+    font-size: 17px;
+    font-weight: bold;
+    box-sizing: border-box;
+ }   
+ /* Full-width form fields */
+ .right input, textarea{
+    display: block;
+    width: 100%;
+    padding: 13px 15px;
+    border :1px solid #CBD5E1;
+    border-radius:7px;
+    background-color: #FFFFFF;
+    color: #1E293B;
+    font-family: Arial,sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline:none;
+    transition: border color 0.3s ease,
+                box-shadow 0.3s ease;
+ }
+ .right input{
+    height:48px;
+ }
+ .right textarea{
+    min-height: 140px;
+    resize:vertical;
+    line-height: 1.5;
+ }
+ /* Add space below the input areas */
+.right input,
+.right textarea {
+margin-bottom: 15px;
+}
+
+ /* Highlight fields when selected */
+ .right input:focus, 
+ .right textarea:focus{
+    border-color: #0F766E;
+     margin-bottom: 15px;
+    box-shadow: 0 0 0 3px rgba(15, 118,110,0,2);
+}
+.contact-button{
+    display: block;
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    padding: 14px 20px;
+    background-color: #0F766E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    font-size: 17px;
+    font-weight: 600;
+    cursor:pointer;
+    transition: background-color 0.3s ease
+                 transform 0.3s ease;
+}
+.contact-button:hover{
+    background-color: #115E59;
+    transform: translateY(-2px);
+}
+
